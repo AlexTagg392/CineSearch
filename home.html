@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CineSearch</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="home.css">
+
 </head>
+
+<!--Nav Bar/Header-->
+
 <body>
-    
+
+    <header class="subnav-hero-section">
+        <h1 class="subnav-hero-headline">CineSearch</h1>
+        <ul class="subnav-hero-subnav">
+            <li><a href="home.html">Home</a></li>
+            <li><a target="_blank" href="saved.html">Saved</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Criteria Form -->
+
+    <div class="translucent-form-overlay">
+        <form>
+            <h3>Let's Find a Movie</h3>
+            <!-- Keyword Search -->
+            <div class="row columns">
+                <label>Keyword
+                    <input type="text" name="keyword" placeholder="Any">
+                </label>
+            </div>
+            <!-- Genre Selector -->
+            <div class="row columns">
+                <label>Genre
+                    <select name="status" type="text">
+                        <option>Choose a Genre</option>
+                        <option value="action">Action</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="family">Family</option>
+                        <option value="foreign">Foreign</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="thriller">Thriller</option>
+                    </select>
+                </label>
+            </div>
+            <!-- Actor/Actress Search -->
+            <div class="row columns">
+                <label>Actor/Actress
+                    <input type="text" name="keyword" placeholder="Pick a favorite Actor or Actress">
+                </label>
+            </div>
+            <!-- MPAA Rating Selector -->
+            <div class="row columns">
+                <label>MPAA Rating
+                    <select name="status" type="text">
+                        <option>Select an MPAA Rating</option>
+                        <option value="g">G</option>
+                        <option value="pg">PG</option>
+                        <option value="pg-13">PG-13</option>
+                        <option value="r">R</option>
+                        <option value="nc-17">NC-17</option>
+                    </select>
+                </label>
+            </div>
+            <!-- Year Range -->
+            <div class="row">
+                <label class="columns small-12">Years</label>
+                <div class="columns small-6">
+                    <input type="date" min="1888" name="startingDate" placeholder="Starting Year">
+                </div>
+                <div>
+                    <p>to</p>
+                </div>
+                <div class="columns small-6">
+                    <input type="date" min="1888" name="endingDate" placeholder="Starting Year">
+                </div>
+            </div>
+            <!-- Streaming Service/Content Provider -->
+            <div class="row columns">
+                <label>Where Would You Like to Watch?
+                    <input type="text" name="keyword"
+                        placeholder="Type your streaming service or content provider here">
+                </label>
+            </div>
+            <!-- Search Button -->
+            <button type="button" class="primary button expanded search-button">
+                Search
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="mobile-bottom-bar">
+        <p class="footer-text">Made with care by a Ray, a Dean, and two Alex's.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
