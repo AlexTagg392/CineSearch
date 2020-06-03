@@ -17,10 +17,10 @@
       So I can more quickly find a movie to watch.
     
    ### Description of CineSearch 
-    Our application will be a one-stop shop for movie-lovers no matter the genre or time. 
-CineSearch takes and records a user's search preferences. CineSearch then creates a list of 
-movies tha match the user's preferences, allowing the user to browse and choose a movie that
-will fit their needs.
+    Our application will be a one-stop shop for movie-lovers no matter the genre or time. CineSearch 
+    takes and records a user's search preferences. CineSearch then creates a list of 
+    movies tha match the user's preferences, allowing the user to browse and choose a movie that
+    will fit their needs.
     
 ## Installation:
     No installation needed
