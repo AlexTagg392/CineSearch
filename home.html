@@ -58,7 +58,7 @@
             <div class="row columns">
                 <label>MPAA Rating
                     <select name="status" type="text">
-                        <option>Pick an MPAA Rating</option>
+                        <option>Select an MPAA Rating</option>
                         <option value="g">G</option>
                         <option value="pg">PG</option>
                         <option value="pg-13">PG-13</option>
@@ -68,13 +68,21 @@
                 </label>
             </div>
             <div class="row">
-                <label class="columns small-12">Price</label>
+                <label class="columns small-12">Years</label>
                 <div class="columns small-6">
-                    <input type="number" min="0" name="min" placeholder="Min">
+                    <input type="date" min="1888" name="startingDate" placeholder="Starting Year">
+                </div>
+                <div>
+                    <p>to</p>
                 </div>
                 <div class="columns small-6">
-                    <input type="number" min="0" name="max" placeholder="Max">
+                    <input type="date" min="1888" name="endingDate" placeholder="Starting Year">
                 </div>
+            </div>
+            <div class="row columns">
+                <label>Where Would You Like to Watch?
+                    <input type="text" name="keyword" placeholder="Type your streaming service or content provider here">
+                </label>
             </div>
             <button type="button" class="primary button expanded search-button">
                 Search
