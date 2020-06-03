@@ -63,6 +63,8 @@
     background-color: rgba(54, 54, 54, 0.8);
     padding: 20px;
     color: #fefefe;
+    align-content: flex-end;
+    margin-left: 500px;
 }
 
 .translucent-form-overlay .columns.row {
