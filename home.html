@@ -32,6 +32,11 @@
         <form>
             <h3>Let's Find a Movie</h3>
             <div class="row columns">
+                <label>Keyword
+                    <input type="text" name="keyword" placeholder="Any">
+                </label>
+            </div>
+            <div class="row columns">
                 <label>Genre
                     <select name="status" type="text">
                         <option>Choose a Genre</option>
@@ -46,17 +51,20 @@
                 </label>
             </div>
             <div class="row columns">
-                <label>Property Type
-                    <select name="status" type="text">
-                        <option>Any</option>
-                        <option value="office">Office</option>
-                        <option value="building">Building</option>
-                    </select>
+                <label>Actor/Actress
+                    <input type="text" name="keyword" placeholder="Pick a favorite Actor or Actress">
                 </label>
             </div>
             <div class="row columns">
-                <label>Location
-                    <input type="text" name="location" placeholder="Any">
+                <label>MPAA Rating
+                    <select name="status" type="text">
+                        <option>Pick an MPAA Rating</option>
+                        <option value="g">G</option>
+                        <option value="pg">PG</option>
+                        <option value="pg-13">PG-13</option>
+                        <option value="r">R</option>
+                        <option value="nc-17">NC-17</option>
+                    </select>
                 </label>
             </div>
             <div class="row">
