@@ -111,3 +111,9 @@
 .footer-text {
     text-align: center;
 }
+
+.resultsText {
+    text-align: center;
+    background-color:  silver;
+    color: #fefefe;
+}
