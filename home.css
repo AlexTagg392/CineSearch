@@ -60,7 +60,7 @@
 .translucent-form-overlay {
     max-width: 500px;
     width: 100%;
-    background-color: rgba(54, 54, 54, 0.8);
+    background-color: silver;
     padding: 20px;
     color: #fefefe;
     align-content: flex-end;
