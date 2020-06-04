@@ -1,8 +1,12 @@
+body {
+    background-color: #c89666;
+}
+
 /* Navbar & Header */
 
 .subnav-hero-section {
     text-align: center;
-    background: #1779ba;
+    background: #12343b;
     background-size: cover;
     position: relative;
     overflow: visible;
