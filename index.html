@@ -25,8 +25,7 @@
         <h1 class="subnav-hero-headline">CineSearch</h1>
         <ul class="subnav-hero-subnav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="saved.html">Saved</a></li>
-            <li><a href="results.html">Results</a></li>
+            
         </ul>
     </header>
 
@@ -44,33 +43,23 @@
             </div>
             <!-- Genre Selector -->
             <div class="row columns">
-                <label>Genre
-                    <select name="status" type="text" id="genre-search" placeholder="Choose">
-
-                        <option value="action">Action</option>
-                        <option value="comedy">Comedy</option>
-                        <option value="family">Family</option>
-                        <option value="foreign">Foreign</option>
-                        <option value="horror">Horror</option>
-                        <option value="romance">Romance</option>
-                        <option value="thriller">Thriller</option>
-
-
-                    </select>
+                <label>
+                    <label for="movie-genre">Genre</label>
+                    <input type="text" id="movie-genre"><br>
                 </label>
             </div>
             <!-- Actor/Actress Search -->
             <div class="row columns">
-                <label>Actor/Actress </label>
+                
                 <!-- For TMDB Actor Search -->
-                <label for="movie-search">Search for an actor</label>
+                <label for="movie-search">Search for an Actor/Actress</label>
                 <input type="text" id="movie-search"><br>
 
                 <!-- How many movie in the Actor Search -->
                 <label for="movie-number">How Many Movies</label>
                 <input type="text" id="movie-number"><br>
             </div>
-
+            
 
             <!-- Search Button -->
             <button type="submit" class="primary button expanded search-button" id="find-movie" value="find">
@@ -90,7 +79,7 @@
 
     <div id="actor-view"></div>
 
-    
+    <div id="genre-view"></div>
 
 
     <!-- Footer -->
