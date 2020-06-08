@@ -10,6 +10,8 @@
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
     <link rel="stylesheet" href="home.css">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -33,18 +35,18 @@
 
     <div class="translucent-form-overlay">
         <form>
-            <h3>Let's Find a Movie</h3>
+            <h3>Let's Find a Movie!</h3>
             <!-- Keyword Search -->
             <div class="row columns">
-                <label>Keyword
-                    <input type="text" name="keyword" placeholder="Any">
+                <label>Search for a movie
+                    <input type="text" id="movie-input" name="keyword" placeholder="Any">
                 </label>
             </div>
             <!-- Genre Selector -->
             <div class="row columns">
                 <label>Genre
-                    <select name="status" type="text">
-                        <option>Choose a Genre</option>
+                    <select name="status" type="text" id="movie-search" placeholder="Choose">
+                      
                         <option value="action">Action</option>
                         <option value="comedy">Comedy</option>
                         <option value="family">Family</option>
@@ -52,6 +54,8 @@
                         <option value="horror">Horror</option>
                         <option value="romance">Romance</option>
                         <option value="thriller">Thriller</option>
+
+
                     </select>
                 </label>
             </div>
@@ -61,51 +65,17 @@
                     <input type="text" name="keyword" placeholder="Pick a favorite Actor or Actress">
                 </label>
             </div>
-            <!-- MPAA Rating Selector -->
-            <div class="row columns">
-                <label>MPAA Rating
-                    <select name="status" type="text">
-                        <option>Select an MPAA Rating</option>
-                        <option value="g">G</option>
-                        <option value="pg">PG</option>
-                        <option value="pg-13">PG-13</option>
-                        <option value="r">R</option>
-                        <option value="nc-17">NC-17</option>
-                    </select>
-                </label>
-            </div>
-            <!-- Year Range -->
-            <div class="row">
-                <label class="columns small-12">Years</label>
-                <div class="columns small-6">
-                    <input type="date" min="1888" name="startingDate" placeholder="Starting Year">
-                </div>
-                <div>
-                    <p>to</p>
-                </div>
-                <div class="columns small-6">
-                    <input type="date" min="1888" name="endingDate" placeholder="Starting Year">
-                </div>
-            </div>
-            <!-- Streaming Service/Content Provider -->
-            <div class="row columns">
-                <label>Where Would You Like To Watch?
-                    <select name="status" type="text">
-                        <option>Select a streaming service or content provider</option>
-                        <option value="amazon">Amazon Prime</option>
-                        <option value="hbo">HBO</option>
-                        <option value="hulu">Hulu</option>
-                        <option value="netflix">Netflix</option>
-                        <option value="shudder">Shudder</option>
-                    </select>
-                </label>
-            </div>
+            
+            
             <!-- Search Button -->
-            <button type="button" class="primary button expanded search-button" href="results.html">
+            <button type="submit" class="primary button expanded search-button" id="find-movie" value="find">
+                
                 Search
             </button>
         </form>
     </div>
+
+    <div id="movie-view"></div>
 
     <!-- Footer -->
     <div class="mobile-bottom-bar">
@@ -119,7 +89,9 @@
 
 
 
-
+    
+    <script type="text/javascript" src="script.js"></script>
+    
 
 
 </body>
