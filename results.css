@@ -55,41 +55,7 @@
     background: rgba(254, 254, 254, 0.15);
 }
 
-/* Criteria Form */
-
-.translucent-form-overlay {
-    max-width: 500px;
-    width: 100%;
-    background-color: silver;
-    padding: 20px;
-    color: #fefefe;
-    align-content: flex-end;
-    margin-left: 500px;
-}
-
-.translucent-form-overlay .columns.row {
-    display: block;
-}
-
-.translucent-form-overlay h3, .translucent-form-overlay label {
-    color: #fefefe;
-}
-
-.translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
-}
-
-.translucent-form-overlay input::-webkit-input-placeholder {
-    color: #8a8a8a;
-}
-
-.translucent-form-overlay input:-ms-input-placeholder {
-    color: #8a8a8a;
-}
-
-.translucent-form-overlay input::placeholder {
-    color: #8a8a8a;
-}
+/* Sub Header */
 
 .resultsText {
     text-align: center;
