@@ -67,8 +67,6 @@ body {
     background-color: #e1b382;
     padding: 20px;
     color: #fefefe;
-    align-content: flex-end;
-    margin-left: 500px;
 }
 
 .translucent-form-overlay .columns.row {
