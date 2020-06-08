@@ -10,7 +10,7 @@
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
     <link rel="stylesheet" href="home.css">
-  
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -45,8 +45,8 @@
             <!-- Genre Selector -->
             <div class="row columns">
                 <label>Genre
-                    <select name="status" type="text" id="movie-search" placeholder="Choose">
-                      
+                    <select name="status" type="text" id="genre-search" placeholder="Choose">
+
                         <option value="action">Action</option>
                         <option value="comedy">Comedy</option>
                         <option value="family">Family</option>
@@ -61,21 +61,37 @@
             </div>
             <!-- Actor/Actress Search -->
             <div class="row columns">
-                <label>Actor/Actress
-                    <input type="text" name="keyword" placeholder="Pick a favorite Actor or Actress">
-                </label>
+                <label>Actor/Actress </label>
+                <!-- For TMDB Actor Search -->
+                <label for="movie-search">Search for an actor</label>
+                <input type="text" id="movie-search"><br>
+
+                <!-- How many movie in the Actor Search -->
+                <label for="movie-number">How Many Movies</label>
+                <input type="text" id="movie-number"><br>
             </div>
-            
-            
+
+
             <!-- Search Button -->
             <button type="submit" class="primary button expanded search-button" id="find-movie" value="find">
-                
+
                 Search
             </button>
         </form>
     </div>
 
     <div id="movie-view"></div>
+
+    <div id="rating-view"></div>
+
+    <div id="year-view"></div>
+
+    <div id="rotten-view"></div>
+
+    <div id="actor-view"></div>
+
+    
+
 
     <!-- Footer -->
     <div class="mobile-bottom-bar">
@@ -89,9 +105,9 @@
 
 
 
-    
+
     <script type="text/javascript" src="script.js"></script>
-    
+
 
 
 </body>
