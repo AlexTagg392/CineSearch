@@ -26,6 +26,10 @@
             <label for="movie-number">How Many Movies</label>
             <input type="text" id="movie-number"><br>
 
+            <!-- Movie by the Genre Search -->
+            <label for="movie-genre">Genre</label>
+            <input type="text" id="movie-genre"><br>
+
             <!-- This button will trigger our AJAX calls -->
             <input id="find-movie" type="submit" value="Find">
             <!-- This button will Reset the form -->
@@ -52,6 +56,10 @@
                 console.log(movie);
                 var actor = $("#movie-search").val();
                 console.log(actor);
+                var genre = $("#movie-genre").val();
+                var genreText = genre.toUpperCase();
+                //console.log(genre);
+                //console.log(genreText);
 
 
                 // OMDB
@@ -59,13 +67,15 @@
 
                 //TMDB
                 var queryURL2 = "https://api.themoviedb.org/3/search/person?api_key=cff64710d5348e4098a7bfe41fde7e0a&language=en-US&query=" + actor + "&page=1&include_adult=false";
-                //console.log(queryURL2);
+
+                //var queryGenre = "https://api.themoviedb.org/3/discover/movie?api_key=cff64710d5348e4098a7bfe41fde7e0a&language=en-US&page=1&primary_release_year=" + year + "&with_genres=" + gSearch;
 
 
                 //Movie Calls if there is input
+
                 if (movie != "") {
-                //==============================================================================================
-                //Utelly Call
+                    //==============================================================================================
+                    //Utelly Call
                     var settings = {
                         "async": true,
                         "crossDomain": true,
@@ -145,7 +155,7 @@
                             url: queryURLP,
                             method: "GET"
                         }).then(function (response2) {
-                        //    console.log(response2);
+                            //    console.log(response2);
                             var nums = parseInt($("#movie-number").val());
                             for (i = 0; i < nums; i++) {
                                 //console.log(nums);
@@ -157,15 +167,59 @@
                 } else {
                     console.log("EMPTY ACTOR!!!");
                 };
+                //For a genre search
+                //TMDB
+                if (genre != "") {
+                    $.ajax({
+                        url: "https://api.themoviedb.org/3/genre/movie/list?api_key=cff64710d5348e4098a7bfe41fde7e0a&language=en-US",
+                        method: "GET"
+                    }).then(function (response) {
+                        for (i = 0; i < response.genres.length; i++) {
+                            //console.log(response);
+                            //console.log(genre);
+                            //console.log(response.genres[i].name);
+                            var gText = response.genres[i].name
+                            var gUp = gText.toUpperCase();
+                            var gCode = response.genres[i].id
+
+//                            console.log(gUp);
+//                            console.log(genreText);
+//                            console.log(gCode);
+                            if (genreText === gUp) {
+                                console.log(gCode);
+                                gSearch = gCode;
+                                console.log(gSearch);
+                            }
+                        }
+
+                        console.log(gSearch);
+                    //------------WORKING---------------------------------------
+                    $.ajax({
+                        url: "https://api.themoviedb.org/3/discover/movie?api_key=cff64710d5348e4098a7bfe41fde7e0a&language=en-US&page=1&with_genres=" + gSearch,
+                        method: "GET"
+                    }).then(function (responseGenre) {
+                        console.log(responseGenre);
+                        for (i = 0; i < responseGenre.results.length; i++) {
+                        console.log(responseGenre.results[i].title);
+                            movie = responseGenre.results[0].title;
+                        }
+                    });
+                    //----------------------WORKING--------------------------------
+                    });
+                };
+
+                console.log("No Genre Search");
             });
 
-            $("#reset").on("click", function() {
+            $("#reset").on("click", function () {
                 $("#movie-input").val("");
                 $("#movie-search").val("");
                 $("#movie-number").val("");
+                $("#movie-genre").val("");
+                $("#movie-year").val("");
                 $("#movie-view").empty();
             });
-            
+
         </script>
     </div>
 </body>
