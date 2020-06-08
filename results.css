@@ -2,7 +2,7 @@
 
 .subnav-hero-section {
     text-align: center;
-    background: #1779ba;
+    background: #12343b;
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -55,65 +55,10 @@
     background: rgba(254, 254, 254, 0.15);
 }
 
-/* Criteria Form */
-
-.translucent-form-overlay {
-    max-width: 500px;
-    width: 100%;
-    background-color: silver;
-    padding: 20px;
-    color: #fefefe;
-    align-content: flex-end;
-    margin-left: 500px;
-}
-
-.translucent-form-overlay .columns.row {
-    display: block;
-}
-
-.translucent-form-overlay h3, .translucent-form-overlay label {
-    color: #fefefe;
-}
-
-.translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
-}
-
-.translucent-form-overlay input::-webkit-input-placeholder {
-    color: #8a8a8a;
-}
-
-.translucent-form-overlay input:-ms-input-placeholder {
-    color: #8a8a8a;
-}
-
-.translucent-form-overlay input::placeholder {
-    color: #8a8a8a;
-}
-
-/* Footer */
-
-.mobile-bottom-bar {
-    width: 100%;
-    height: 3.778rem;
-    background: #1779ba;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.footer-text {
-    text-align: center;
-}
+/* Sub Header */
 
 .resultsText {
     text-align: center;
-    background-color:  silver;
+    background-color:  #e1b382;
     color: #fefefe;
 }

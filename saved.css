@@ -2,7 +2,7 @@
 
 .subnav-hero-section {
     text-align: center;
-    background: #1779ba;
+    background: #12343b;
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -59,6 +59,6 @@
 
 .savedText {
     text-align: center;
-    background-color:  silver;
+    background-color:  #e1b382;
     color: #fefefe;
 }
