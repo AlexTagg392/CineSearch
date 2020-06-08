@@ -1,5 +1,4 @@
-console.log("hello")
-    
+
     // This .on("click") function will trigger the AJAX Call
     $("#find-movie").on("click", function (event) {
         // Preventing the submit button from trying to submit the form
@@ -62,6 +61,11 @@ console.log("hello")
                 };
 
                 $("#movie-view").text(response.Plot);
+                $("#rating-view").text("This is the MPAA rating: " + response.Rated);
+                $("#year-view").text("This is the year of release: " + response.Year);
+                $("#rotten-view").text("Rotten Tomatoes Score is " + response.Ratings[1].Value);
+                //$("#").text(response.Year);
+                
 
                 var thumb = $("<div>");
                 var posterImage = $("<img>");
@@ -108,6 +112,7 @@ console.log("hello")
                     for (i = 0; i < nums; i++) {
                         //console.log(nums);
                         console.log(response2.cast[i].character + "   " + response2.cast[i].original_title);
+                        $("#actor-view").append(response2.cast[i].character +  " - " + response2.cast[i].original_title +  "<hr>" );
                     }
 
                 });
@@ -123,5 +128,7 @@ console.log("hello")
         $("#movie-number").val("");
         $("#movie-view").empty();
     });
+
+
 
 
