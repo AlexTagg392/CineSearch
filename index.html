@@ -18,14 +18,11 @@
 <!--Nav Bar/Header-->
 
 <body>
-
-
     <header class="subnav-hero-section">
         <img src="fi-video.svg" alt="Video Icon">
         <h1 class="subnav-hero-headline">CineSearch</h1>
         <ul class="subnav-hero-subnav">
             <li><a href="index.html">Home</a></li>
-            
         </ul>
     </header>
 
@@ -38,14 +35,14 @@
             <!-- Keyword Search -->
             <div class="row columns">
                 <label>Search for a movie
-                    <input type="text" id="movie-input" name="keyword" placeholder="Any">
+                    <input type="text" id="movie-input" name="keyword" placeholder="Type in movie Title">
                 </label>
             </div>
             <!-- Genre Selector -->
             <div class="row columns">
                 <label>
                     <label for="movie-genre">Genre</label>
-                    <input type="text" id="movie-genre"><br>
+                    <input type="text" id="movie-genre" placeholder="Type in movie Genre"><br>
                 </label>
             </div>
             <!-- Actor/Actress Search -->
@@ -53,17 +50,16 @@
                 
                 <!-- For TMDB Actor Search -->
                 <label for="movie-search">Search for an Actor/Actress</label>
-                <input type="text" id="movie-search"><br>
+                <input type="text" id="movie-search" placeholder="Type in an Actor or Actresses name"><br>
 
                 <!-- How many movie in the Actor Search -->
-                <label for="movie-number">How Many Movies</label>
-                <input type="text" id="movie-number"><br>
+                <label for="movie-number">How Many Movies (this is required with the Actor/Actress field)</label>
+                <input type="text" id="movie-number" placeholder="Type in total number of movies"><br>
             </div>
             
 
             <!-- Search Button -->
             <button type="submit" class="primary button expanded search-button" id="find-movie" value="find">
-
                 Search
             </button>
         </form>
@@ -87,17 +83,7 @@
         <p class="footer-text">Made with care by a Ray, a Dean, and two Alex's.</p>
     </div>
 
-
-
-
-
-
-
-
-
     <script type="text/javascript" src="script.js"></script>
-
-
 
 </body>
 
